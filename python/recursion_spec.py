@@ -1,5 +1,5 @@
 # Write your unit tests here
-from recursion_challenge import factorial, palindrome, bottles
+from recursion_challenge import factorial, palindrome, bottles, roman_num
 
 
 ##---------------------------factorial tests
@@ -24,3 +24,14 @@ from recursion_challenge import factorial, palindrome, bottles
 
 ##---------------------------bottles tests
 # print(f"THE SONG:\n   {bottles(5)}")
+
+
+
+##---------------------------roman nums test
+print(f"should == be DVI:  {roman_num(506)}")
+
+print(f"should == be VI:  {roman_num(6)}")
+
+print(f"should == be MMDCLXII:  {roman_num(2662)}")
+
+print(f"should == be CDXLIV:  {roman_num(444)}")

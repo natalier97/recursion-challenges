@@ -63,5 +63,32 @@ def bottles(num):
 	
 
 
-def roman_num(num):
-	pass
+
+
+
+"""A function that takes in a number and returns roman numerals equiv."""
+def roman_num(num, priority_order_list = ["M", "D", "C", "L", "X", "V", "I"], output = ''):
+	roman_numeral_to_number = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000,
+  };
+
+	if len(priority_order_list) == 0:
+		return ''
+	if num < roman_numeral_to_number[priority_order_list[0]]:
+		return roman_num(num, priority_order_list[1:], output)
+	output += priority_order_list[0]
+	num = num - roman_numeral_to_number[priority_order_list[0]]
+	output = output + roman_num(num, priority_order_list)
+	output= output.replace('DCCCC', 'CM')
+	output = output.replace("CCCC", "CD")
+	output = output.replace("XXXX", "XL")
+	output = output.replace("VIIII", "IX")
+	output = output.replace("IIII", "IV")
+	return output
+
