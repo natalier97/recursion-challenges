@@ -28,10 +28,10 @@ from recursion_challenge import factorial, palindrome, bottles, roman_num
 
 
 ##---------------------------roman nums test
-print(f"should == be DVI:  {roman_num(506)}")
+# print(f"should == be DVI:  {roman_num(506)}")
 
-print(f"should == be VI:  {roman_num(6)}")
+# print(f"should == be VI:  {roman_num(6)}")
 
-print(f"should == be MMDCLXII:  {roman_num(2662)}")
+# print(f"should == be MMDCLXII:  {roman_num(2662)}")
 
-print(f"should == be CDXLIV:  {roman_num(444)}")
+# print(f"should == be CDXLIV:  {roman_num(444)}")
